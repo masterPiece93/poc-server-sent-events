@@ -13,5 +13,6 @@ gunicorn
 
 ## How to run the project
 ###### installing requiremets.txt : 
-`cd poc-server-sent-events/server/sse`
+`cd poc-server-sent-events/server/sse` 
+
 `pip3 install -r requirements.txt`
