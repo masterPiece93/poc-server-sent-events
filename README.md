@@ -16,3 +16,6 @@ gunicorn
 `cd poc-server-sent-events/server/sse` 
 
 `pip3 install -r requirements.txt`
+
+###### run command :
+`python3 gunicorn wsgi -b 0:8000 -w 10 -k gevent`
