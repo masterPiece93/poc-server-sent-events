@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table, tr {
+          border: 1px solid black;
+        }
+        </style>
+</head>
+<body>
+    
+
+<table id="myTable">
+    
+  </table>
+  <br>
+
+    <script>
+        var eventsource = new EventSource('http://192.168.1.22:8000/stream/?role=se')
+
+        function insertRow(data) {
+            var table = document.getElementById("myTable");
+            var row = table.insertRow(0);
+            
+            let i = 0
+            for (let key in data){
+                if (data.hasOwnProperty(key)) {
+                    var val = data[key];
+                    var cell = row.insertCell(i)
+                    i+=1
+                    cell.innerHTML = val
+                }
+            }
+        }
+
+        console.log(eventsource)
+
+        eventsource.onopen = (e)=>{
+            console.log("connection established")
+        }
+
+        eventsource.onmessage = (e)=>{
+
+            console.log(`message : ${e}`)
+            console.log(e.lastEventId)
+            insertRow(e.data)
+        }
+
+        eventsource.onerror = (e)=>{
+            console.log(`error : ${e}`)
+        }
+
+        eventsource.addEventListener("event1",(e)=>{
+            console.log("custom event")
+            console.log(e)
+        })
+        // eventsource.close()
+    </script>
+</body>
+</html>
