@@ -8,8 +8,10 @@
 | How to run project | steps to install and run the repo |
 
 ## pre-requisites
-python3
+python3 ,
 gunicorn
 
 ## How to run the project
 ###### installing requiremets.txt : 
+`cd poc-server-sent-events/server/sse`
+`pip3 install -r requirements.txt`
