@@ -17,5 +17,11 @@ gunicorn
 
 `pip3 install -r requirements.txt`
 
-###### run command :
+###### run server command :
 `python3 gunicorn wsgi -b 0:8000 -w 10 -k gevent`
+
+###### run global processes :
+`python3 global_process_1.py`
+
+`python3 global_process_2.py`
+
