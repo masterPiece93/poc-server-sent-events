@@ -21,7 +21,9 @@ gunicorn
 `python3 gunicorn wsgi -b 0:8000 -w 10 -k gevent`
 
 ###### run global processes :
-`python3 global_process_1.py`
+open a new terminal in pop-server-sent-event folder
+> `python3 global_process_1.py`
 
-`python3 global_process_2.py`
+open a new terminal in pop-server-sent-event folder
+> `python3 global_process_2.py`
 
