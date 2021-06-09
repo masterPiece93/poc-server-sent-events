@@ -23,6 +23,7 @@ gunicorn
 ###### run global processes :
 
 Global Process 1 : This process starts generating integer numbers and prints them on the terminal
+
 *open a new terminal in pop-server-sent-event folder*
 >`python3 global_process_1.py`
 
