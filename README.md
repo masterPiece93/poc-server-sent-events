@@ -22,15 +22,13 @@ gunicorn
 
 ###### run global processes :
 
-1. Global Process 1 : This process starts generating integer numbers and prints them on the terminal
+Global Process 1 : This process starts generating integer numbers and prints them on the terminal
+*open a new terminal in pop-server-sent-event folder*
+>`python3 global_process_1.py`
 
+Global Process 2 : This process starts generating floating point numbers and prints them on the terminal
 
-  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*open a new terminal in pop-server-sent-event folder*
-  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; >`python3 global_process_1.py`
-
-2. Global Process 2 : This process starts generating floating point numbers and prints them on the terminal
-
-  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*open a new terminal in pop-server-sent-event folder*
-  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; >`python3 global_process_2.py`
+*open a new terminal in pop-server-sent-event folder*
+>`python3 global_process_2.py`
 
 
