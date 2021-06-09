@@ -4,4 +4,12 @@
 ## Table of Contents
 | Topic | Description |
 | ----- | ----------- |
+| pre-requisites| pre requisite system requirements |
 | How to run project | steps to install and run the repo |
+
+## pre-requisites
+python3
+gunicorn
+
+## How to run the project
+###### installing requiremets.txt : 
