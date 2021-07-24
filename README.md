@@ -32,4 +32,4 @@ Global Process 2 : This process starts generating floating point numbers and pri
 *open a new terminal in pop-server-sent-event folder*
 >`python3 global_process_2.py`
 
-
+*viola , you got it working !!!
